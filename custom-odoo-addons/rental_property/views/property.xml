@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_rental_property" model="ir.actions.act_window">
+        <field name="name">Property</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">rental.property</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_property_property"
+              name="Property"
+              parent="menu_property_root"
+              sequence="10"/>
+
+    <menuitem id="menu_property_properties"
+              name="Property"
+              parent="menu_property_property"
+              action="action_rental_property"
+              sequence="10"/>
+</odoo>
